@@ -13,13 +13,13 @@ class App extends React.Component {
          <div className="container">
         <div className="input-group">
                 <label HtmlFor="username">Username</label><br/>
-                <input type="text" name="username" className="login-input" placeholder="username"/>  <br/>              
+                <input type="text" name="username" className="login-input" placeholder="username"/>  <br/>    <br/>          
                 
         
      
                 <label HtmlFor="password">Password</label><br/>
                 <input type="password" name="password" className="login-input" placeholder="password"/><br/>                
-                </div><br/>
+                </div><br/><br/><br/><br/>
             <button type="button" className="login-btn" > Login</button>
             
             </div>

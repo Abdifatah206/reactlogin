@@ -33,7 +33,7 @@
   }
 }
 .container {
-    background-color: aqua;
+    border: solid 1px;
     width: 400px;
     height: 400px;
     margin: 0 auto;
@@ -41,6 +41,14 @@
 .input-group {
     width:200px;
     height: 40px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.login-btn {
+    width: 120px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 
