@@ -11,10 +11,6 @@ class App extends React.Component {
         return (
         
          <div className="container">
-            <div className="switch">
-            <a href="index.js"><button type="button" className="login" > Login</button></a>
-            <a href="Register.js"><button type="button" className="register" > Register</button></a>
-            </div>
         <div className="input-group">
                 <label HtmlFor="username">Username</label><br/>
                 <input type="text" name="username" className="login-input" placeholder="username"/>  <br/>    <br/>          
