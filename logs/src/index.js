@@ -10,6 +10,8 @@ class App extends React.Component {
     render() {
         return (
         <div className="big">
+        <button className="btn"><a href="">Register</a></button>
+        <button className="btn"><a href="">Login</a></button>
         </div>
 
 
