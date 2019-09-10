@@ -4,45 +4,106 @@ import './App.css'
 
 class App extends React.Component {
     contructor(props) {
-     
+
         this.state = {};
     }
     render() {
         return (
-        
-         <div className="container">
-            <div className="switch">
-            <a href="index.js"><button type="button" className="login" > Login</button></a>
-            <a href="Register.js"><button type="button" className="register" > Register</button></a>
-            </div>
-        <div className="input-group">
-                <label HtmlFor="username">Username</label><br/>
-                <input type="text" name="username" className="login-input" placeholder="username"/>  <br/>    <br/>          
-                
-        
-     
-                <label HtmlFor="password">Password</label><br/>
-                <input type="password" name="password" className="login-input" placeholder="password"/><br/> <br/>
-            <button type="button" className="login-btn" > Login</button>
-                </div>
-            
-            
-            </div>
-        
-        
-        
-        
-        
+        <div className="big">
+        </div>
+
+
+
+
+
         );
-        
-        
-        
-    } 
+
+
+
+    }
 }
-        
-        
-        
-   
+
+
+
+
+
+// login form
+class LoginBox extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {};
+
+    }
+submitlogin(e) {
+
+    }
+render() {
+    return (
+    <div className="inner-container">
+
+        <div className="header">
+            Login
+            </div>
+
+        <div className="box">
+
+            <div className="input-group">
+                <label HtmlFor="username">Username</label>
+                <input type="text" name="username" className="login-input" placeholder="username"/>
+                </div>
+
+    <div className="input-group">
+                <label HtmlFor="password">Password</label>
+                <input type="password" name="password" className="login-input" placeholder="password"/>
+                </div>
+            <button type="button" className="login-btn" onclick={this.submitlogin.bind(this)} > Login</button>
+
+            </div>
+
+
+        </div>
+   );
+ }
+}
+// registeration form
+class RegisterBox extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { };
+
+    }
+    submitRegister (e) {
+
+    }
+
+render(){
+    return (
+    <div className="inner-container">
+        <div className="header">
+            Register
+            </div>
+
+        <div className="box">
+            <div className="input-group">
+                <label HtmlFor="username">Username</label>
+                <input type="text" name="username" className="login-input" placeholder="username"/>
+
+                </div>
+    <div className="input-group">
+                <label HtmlFor="password">Password</label>
+                <input type="password" name="password" className="login-input" placeholder="password"/>
+
+                </div>
+            <button type="button" className="login-btn" onclick={this.submitRegister.bind(this)} > Register</button>
+
+            </div>
+
+
+        </div>
+    );
+}
+}
+
 
 ReactDOM.render(<App/>, document.getElementById('root'));
 
