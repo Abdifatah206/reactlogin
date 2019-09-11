@@ -10,17 +10,19 @@ class App extends React.Component {
     render() {
         return (
         <div className="big">
-        <form>
+        <div className="small">
+        <form >
     <label>
       Username:<br/>
-      <input type="text" name="username" /><br/>
+      <input type="text" name="username" className="input1" /><br/><br/>
       Password:<br/>
-      <input type="text" name="username" /><br/><br/>
+      <input type="text" name="username" className="input1" /><br/><br/>
 
     </label>
 
-    <input type="submit" value="Submit" />
-  </form>
+    <input type="submit" value="Submit" className="btn" /><br /><br/>
+    If not registered <a href="">Register</a>
+  </form></div>
         </div>
 
 

@@ -1,8 +1,23 @@
 .big {
-width: 400px;
-height: 400px;
+width: 1000px;
+height: 500px;
 margin: 0 auto;
-background-color: grey;
+background-color: #fbf9fc ;
 padding-top: 150px;
 
+}
+div.small{
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+  background-color: #fbf9fc ;
+  border:1px;
+}
+.input1{
+  width: 250px;
+  height: 25px;
+}
+.btn{
+  width: 250px;
+  height: 30px;
 }
