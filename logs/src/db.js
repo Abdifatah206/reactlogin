@@ -3,4 +3,4 @@ const dbcon = require('./dbcon.json');
 const connection = db.createConnection(dbcon);
 
 
-module.exports = connection;
+exports default connection;

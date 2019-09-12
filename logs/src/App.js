@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
+const bcrypt = require('bcrypt');
+const mysql = require('mysql');
+const db = require('/db');
 
+const bodyParser = require("body-parser");
 
-class App extends Component {
-    render(){
-        return (
-        <div className="App">
-            <h1> Hello world</h1>
-           
-            </div>
-        );
-    }
-}
+const urlEncodedParser = bodyParser.urlencoded({extended: false});
 
 export default App;
