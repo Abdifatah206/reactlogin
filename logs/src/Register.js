@@ -4,44 +4,42 @@ import './App.css'
 
 class App extends React.Component {
     contructor(props) {
-     
+
         this.state = {};
     }
     render() {
         return (
-        
-         <div className="container">
-        <div className="input-group">
-                <label HtmlFor="username">Email</label><br/>
-                <input type="email" name="email" className="login-input" placeholder="username"/>  <br/>    <br/>          
-                
-        
-     
-                <label HtmlFor="password">Password</label><br/>
-                <input type="password" name="password" className="login-input" placeholder="password"/><br/> <br/>
-            
-            <label HtmlFor="password"> Confirm Password</label><br/>
-                <input type="password" name="password" className="login-input" placeholder="password"/><br/> <br/>
-            <button type="button" className="login-btn" > Login</button>
-                </div>
-            
-            
-            </div>
-        
-        
-        
-        
-        
+
+          <div className="big">
+          <div className="small">
+          <form >
+      <label>
+        Email:<br/>
+        <input type="email" name="email" className="input1" /><br/><br/>
+        Username:<br/>
+        <input type="text" name="username" className="input1" /><br/><br/>
+        Password:<br/>
+        <input type="password" name="password" className="input1" /><br/><br/>
+        Password:<br/>
+        <input type="password" name="password" className="input1" /><br/><br/>
+      </label>
+
+      <input type="submit" value="Submit" className="btn" /><br /><br/>
+      If not registered <a href="/index.js">Login</a>
+    </form></div>
+          </div>
+
+
         );
-        
-        
-        
-    } 
+
+
+
+    }
 }
-        
-        
-        
-   
+
+
+
+
 
 ReactDOM.render(<App/>, document.getElementById('root'));
 
