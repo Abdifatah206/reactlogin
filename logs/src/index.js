@@ -23,7 +23,7 @@ class App extends React.Component {
     </label>
 
     <input type="submit" value="Submit" className="btn" /><br /><br/>
-    
+
   </form></div>
         </div>
 
@@ -42,82 +42,7 @@ class App extends React.Component {
 
 
 
-// login form
-class LoginBox extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
 
-    }
-submitlogin(e) {
-
-    }
-render() {
-    return (
-    <div className="inner-container">
-
-        <div className="header">
-            Login
-            </div>
-
-        <div className="box">
-
-            <div className="input-group">
-                <label HtmlFor="username">Username</label>
-                <input type="text" name="username" className="login-input" placeholder="username"/>
-                </div>
-
-    <div className="input-group">
-                <label HtmlFor="password">Password</label>
-                <input type="password" name="password" className="login-input" placeholder="password"/>
-                </div>
-            <button type="button" className="login-btn" onclick={this.submitlogin.bind(this)} > Login</button>
-
-            </div>
-
-
-        </div>
-   );
- }
-}
-// registeration form
-class RegisterBox extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { };
-
-    }
-    submitRegister (e) {
-
-    }
-
-render(){
-    return (
-    <div className="inner-container">
-        <div className="header">
-            Register
-            </div>
-
-        <div className="box">
-            <div className="input-group">
-                <label HtmlFor="username">Username</label>
-                <input type="text" name="username" className="login-input" placeholder="username"/>
-
-                </div>
-    <div className="input-group">
-                <label HtmlFor="password">Password</label>
-                <input type="password" name="password" className="login-input" placeholder="password"/>
-
-                </div>
-            <button type="button" className="login-btn" onclick={this.submitRegister.bind(this)} > Register</button>
-
-            </div>
-
-
-        </div>
-    );
-}
-}
 
 
 ReactDOM.render(<App/>, document.getElementById('root'));
