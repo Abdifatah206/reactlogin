@@ -50,7 +50,7 @@ app.post("index", urlEncodedParser, function(request, response) {
 
 					} else {
 
-						response.send( 'Username is not correct');
+						response.send('Username is not correct');
 
 					}
 
@@ -70,13 +70,17 @@ app.get('/', function(req, res) {
 
     // render the page and pass in any flash data if it exists
 
-    res.render('index.js');
+    res.render('Login.jsx');
 
 });
 
 
 
+app.get('/register', function(req, res) {
 
+	res.render('Register.jsx');
+
+});
 
 
 
