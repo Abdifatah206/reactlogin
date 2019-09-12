@@ -11,7 +11,7 @@ class App extends React.Component {
         return (
         <div className="big">
         <div className="small">
-        <form >
+        <form action="login" method="post">
     <label>
       Username:<br/>
       <input type="text" name="username" className="input1" /><br/><br/>
