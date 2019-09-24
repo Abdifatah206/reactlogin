@@ -76,14 +76,5 @@ app.get('/', function(req, res) {
 
 
 
-app.get('/register', function(req, res) {
-
-	res.render('Register.jsx');
-
-});
-
-
-
-app.listen(3000);
 
 export default App;
